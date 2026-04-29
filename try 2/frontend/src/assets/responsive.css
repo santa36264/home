@@ -1,0 +1,27 @@
+/* ============================================
+   RESPONSIVE UTILITIES — Dark Theme
+   ============================================ */
+
+@media (max-width: 768px) {
+  .desktop-only { display: none !important; }
+  .mobile-only  { display: block !important; }
+}
+
+@media (min-width: 769px) {
+  .desktop-only { display: block !important; }
+  .mobile-only  { display: none !important; }
+}
+
+@media (max-width: 768px) {
+  button, a.nav-item, .btn { min-height: 44px; }
+  body { font-size: 15px; }
+  .content { padding: 1rem !important; }
+  .stats-grid, .requests-grid { grid-template-columns: 1fr !important; }
+  .modal { width: 95% !important; max-width: 95% !important; margin: 1rem !important; }
+  .table-responsive { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  input, select, textarea { font-size: 16px !important; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
